@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.sliding-background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  background: url(./background.jpg) repeat;
+  height: 5076px;
+  width: 5076px;
+  animation: slide 60s linear infinite;
+  filter: grayscale(80%);
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, -1692px, 0);
+  }
+}
+
+#messageForm {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  gap: 20px;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: red;
+  font-size: larger;
+}
+
+input {
+  border: 0%;
+  padding: 0%;
+  border-bottom: 3px solid red;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>funky video game api</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./client.js"></script>
+  </head>
+  <body>
+    <audio loop autoplay src="./backgroundtune.mp3"></audio>
+    <div class="sliding-background"></div>
+    <h1>video game rating system</h1>
+    <p>please drop your name, favourite game and rating! enjoy!!!!</p>
+    <form id="messageForm">
+      <input type="text" name="name" placeholder="name" />
+      <input type="text" name="title" placeholder="Favourite video game" />
+      <input type="number" name="rating" placeholder="rating" />
+      <button type="submit">send</button>
+    </form>
+    <div id="box-container"></div>
+  </body>
+</html>
