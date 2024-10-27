@@ -1,5 +1,5 @@
 h1 {
-  color: red;
+  color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: xx-large;
 }
@@ -12,7 +12,7 @@ h1 {
   height: 5076px;
   width: 5076px;
   animation: slide 60s linear infinite;
-  filter: grayscale(80%);
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 @keyframes slide {
   0% {
@@ -25,19 +25,37 @@ h1 {
 
 #messageForm {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: aliceblue;
   gap: 20px;
 }
 
+button {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 450px) {
+  #messageForm {
+    width: 100vw;
+  }
+}
+
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: red;
+  color: black;
   font-size: larger;
 }
 
 input {
-  border: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
   padding: 0%;
-  border-bottom: 3px solid red;
+  border: 0%;
+}
+input:focus {
+  border: 15px red;
 }

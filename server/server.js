@@ -24,6 +24,8 @@ app.post("/games", async function (request, response) {
   const name = request.body.name;
   const title = request.body.title;
   const rating = request.body.rating;
+  // likes
+  //const likes = request.body.likes;
   console.log(name, title, rating);
   const result = await db.query(
     `INSERT INTO games (name, title, rating) VALUES ('${name}', '${title}', '${rating}')`
